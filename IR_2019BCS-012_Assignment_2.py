@@ -21,6 +21,6 @@ def Rz(theta):
 
 Bp = np.matrix([2,3,0])
 
-Ap = Rz(30)*Ry(30)*Rx(30)*np.transpose(Bp);
+Ap = Rx(30)*Ry(30)*Ry(30)*np.transpose(Bp);
 
 print(np.round(Ap, 3))
